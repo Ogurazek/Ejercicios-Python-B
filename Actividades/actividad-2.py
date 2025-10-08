@@ -10,3 +10,17 @@
 # E- Al finalizar, el programa debe mostrar los resultados con la cantidad de votos que recibió
 # cada candidato
 # }
+
+votos = {}
+votantes = set()
+
+for i in range(3):
+    nombre = input("Ingresa tu nombre")
+    if nombre in votantes:
+        print("Ya votaste, no podes votar nuevamente.")
+    else:
+        candidato = input("Votá por un candidato: ")
+        votos[candidato] = votos.get(candidato, 0) + 1
+        votantes.add(nombre)
+
+print("resultado", votos)

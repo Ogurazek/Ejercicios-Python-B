@@ -6,3 +6,20 @@
 # C- Si existe, muestre por pantalla el precio y la cantidad disponible
 # D- Si no existe, deja un mensaje de que no se encontró el producto
 # }
+
+
+stock = {
+    "pan": (100, 20),
+    "leche": (200, 10),
+}
+
+producto = input("Ingrese el producto que desea: ")
+
+
+if producto in stock:
+    precio, cantidad = stock[producto]
+    print(
+        f"El precio del {producto} es: {precio}, el stock del producto es: {cantidad}"
+    )
+else:
+    print("No se encuentra el producto")
