@@ -11,6 +11,7 @@ frutas.add("frutilla")
 frutas.discard("Sandía")
 frutas.pop()
 
+function = "elias"
 # print("Agregando fruta", frutas)
 
 A = {1, 2, 3, 4}
